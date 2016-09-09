@@ -5,8 +5,6 @@ import java.io.File;
 import javafx.fxml.FXML;
 import javafx.stage.FileChooser;
 
-import org.controlsfx.dialog.Dialogs;
-
 import controller.MainApp;
 
 /**
@@ -102,11 +100,11 @@ public class RootLayoutController {
      */
     @FXML
     private void handleAbout() {
-        Dialogs.create()
-            .title("AddressApp")
-            .masthead("About")
-            .message("Author: Marco Jakob\nWebsite: http://code.makery.ch")
-            .showInformation();
+//        Dialogs.create()
+//            .title("AddressApp")
+//            .masthead("About")
+//            .message("Author: Marco Jakob\nWebsite: http://code.makery.ch")
+//            .showInformation();
     }
 
     /**

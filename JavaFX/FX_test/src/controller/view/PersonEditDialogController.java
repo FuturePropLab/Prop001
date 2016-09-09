@@ -4,8 +4,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import org.controlsfx.dialog.Dialogs;
-
 import controller.model.Person;
 import controller.util.DateUtil;
 
@@ -148,11 +146,11 @@ public class PersonEditDialogController {
             return true;
         } else {
             // Show the error message.
-            Dialogs.create()
-                .title("Invalid Fields")
-                .masthead("Please correct invalid fields")
-                .message(errorMessage)
-                .showError();
+//            Dialogs.create()
+//                .title("Invalid Fields")
+//                .masthead("Please correct invalid fields")
+//                .message(errorMessage)
+//                .showError();
             return false;
         }
     }

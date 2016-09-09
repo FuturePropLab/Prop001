@@ -4,9 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-
-import org.controlsfx.dialog.Dialogs;
-
+import javafx.stage.Stage;
 import controller.MainApp;
 import controller.model.Person;
 import controller.util.DateUtil;
@@ -111,11 +109,12 @@ public class PersonOverviewController {
             personTable.getItems().remove(selectedIndex);
         } else {
             // Nothing selected.
-        	Dialogs.create()
-            .title("Information Dialog")
-            .masthead("Look, an Information Dialog")
-            .message("I have a great message for you!")
-            .showInformation();
+//        	Dialogs.create()
+//            .title("Information Dialog")
+//            .masthead("Look, an Information Dialog")
+//            .message("I have a great message for you!").showInformation();
+        	
+//        	Dialogs.create().title("sdf").message("sdf").showInformation();      
         }
     }
     
@@ -147,11 +146,11 @@ public class PersonOverviewController {
 
         } else {
             // Nothing selected.
-            Dialogs.create()
-                .title("No Selection")
-                .masthead("No Person Selected")
-                .message("Please select a person in the table.")
-                .showWarning();
+//            Dialogs.create()
+//                .title("No Selection")
+//                .masthead("No Person Selected")
+//                .message("Please select a person in the table.")
+//                .showWarning();
         }
     }
 }
