@@ -1,10 +1,13 @@
 package controller.view;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
+
 import controller.MainApp;
 import controller.model.Person;
 import controller.util.DateUtil;
@@ -108,13 +111,12 @@ public class PersonOverviewController {
         if (selectedIndex >= 0) {
             personTable.getItems().remove(selectedIndex);
         } else {
-            // Nothing selected.
-//        	Dialogs.create()
-//            .title("Information Dialog")
-//            .masthead("Look, an Information Dialog")
-//            .message("I have a great message for you!").showInformation();
-        	
-//        	Dialogs.create().title("sdf").message("sdf").showInformation();      
+            // Nothing selected.       	
+        	Alert alert = new Alert(AlertType.INFORMATION);
+			alert.setTitle("No Selection");
+			alert.setHeaderText("No Person Selected");
+			alert.setContentText("Please select a person in the table.");
+			alert.show();
         }
     }
     
@@ -146,11 +148,11 @@ public class PersonOverviewController {
 
         } else {
             // Nothing selected.
-//            Dialogs.create()
-//                .title("No Selection")
-//                .masthead("No Person Selected")
-//                .message("Please select a person in the table.")
-//                .showWarning();
+            Alert alert = new Alert(AlertType.INFORMATION);
+			alert.setTitle("No Selection");
+			alert.setHeaderText("No Person Selected");
+			alert.setContentText("Please select a person in the table.");
+			alert.show();
         }
     }
 }

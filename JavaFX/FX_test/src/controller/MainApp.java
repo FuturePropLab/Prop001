@@ -9,7 +9,6 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
-
 import controller.model.Person;
 import controller.model.PersonListWrapper;
 import controller.view.PersonEditDialogController;
@@ -20,7 +19,9 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Dialog;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
@@ -224,10 +225,9 @@ public class MainApp extends Application {
             setPersonFilePath(file);
 
         } catch (Exception e) { // catches ANY exception
-            /*Dialogs.create()
-                    .title("Error")
-                    .masthead("Could not load data from file:\n" + file.getPath())
-                    .showException(e);*/
+        	Alert alert = new Alert(AlertType.ERROR);
+			alert.setHeaderText("Could not load data from file:\n" + file.getPath());
+			alert.show();
         }
     }
 
@@ -253,9 +253,9 @@ public class MainApp extends Application {
             // Save the file path to the registry.
             setPersonFilePath(file);
         } catch (Exception e) { // catches ANY exception
-//            Dialogs.create().title("Error")
-//                    .masthead("Could not save data to file:\n" + file.getPath())
-//                    .showException(e);
+        	Alert alert = new Alert(AlertType.ERROR);
+			alert.setHeaderText("Could not save data to file:\n" + file.getPath());
+			alert.show();
         }
     }
     

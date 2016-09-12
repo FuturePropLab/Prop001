@@ -1,7 +1,9 @@
 package controller.view;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 
 import controller.model.Person;
@@ -146,11 +148,11 @@ public class PersonEditDialogController {
             return true;
         } else {
             // Show the error message.
-//            Dialogs.create()
-//                .title("Invalid Fields")
-//                .masthead("Please correct invalid fields")
-//                .message(errorMessage)
-//                .showError();
+        	Alert alert = new Alert(AlertType.ERROR);
+			alert.setTitle("Invalid Fields");
+			alert.setHeaderText("Please correct invalid fields");
+			alert.setContentText(errorMessage);
+			alert.show();
             return false;
         }
     }

@@ -3,6 +3,8 @@ package controller.view;
 import java.io.File;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.stage.FileChooser;
 
 import controller.MainApp;
@@ -100,11 +102,11 @@ public class RootLayoutController {
      */
     @FXML
     private void handleAbout() {
-//        Dialogs.create()
-//            .title("AddressApp")
-//            .masthead("About")
-//            .message("Author: Marco Jakob\nWebsite: http://code.makery.ch")
-//            .showInformation();
+    	Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setTitle("AddressApp");
+		alert.setHeaderText("About");
+		alert.setContentText("Author: Marco Jakob\nWebsite: http://code.makery.ch");
+		alert.show();
     }
 
     /**
