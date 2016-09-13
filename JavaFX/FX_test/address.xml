@@ -41,34 +41,10 @@
         <street>some street</street>
     </person>
     <person>
-        <birthday>1999-02-21</birthday>
+        <birthday>1999-12-21</birthday>
         <city>some city</city>
-        <firstName>Lydia</firstName>
-        <lastName>Kunz</lastName>
-        <postalCode>1234</postalCode>
-        <street>some street</street>
-    </person>
-    <person>
-        <birthday>1999-02-21</birthday>
-        <city>some city</city>
-        <firstName>Anna</firstName>
-        <lastName>Best</lastName>
-        <postalCode>1234</postalCode>
-        <street>some street</street>
-    </person>
-    <person>
-        <birthday>1999-02-21</birthday>
-        <city>some city</city>
-        <firstName>Stefan</firstName>
-        <lastName>Meier</lastName>
-        <postalCode>1234</postalCode>
-        <street>some street</street>
-    </person>
-    <person>
-        <birthday>1999-02-21</birthday>
-        <city>some city</city>
-        <firstName>Martin</firstName>
-        <lastName>Mueller</lastName>
+        <firstName>A</firstName>
+        <lastName>B</lastName>
         <postalCode>1234</postalCode>
         <street>some street</street>
     </person>
