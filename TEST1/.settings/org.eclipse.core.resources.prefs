@@ -1,2 +1,9 @@
 eclipse.preferences.version=1
+encoding//src/Model/Goods.java=GBK
+encoding//src/Model/Record.java=GBK
+encoding//src/Model/Seller.java=GBK
+encoding//src/Model/test.fxml=GBK
+encoding//src/UI/GridBagDemo.java=GBK
+encoding//src/UI/LoginFrame.java=GBK
 encoding//src/UI/MainFrame.java=UTF-8
+encoding//src/UI/WrongFrame.java=GBK
